@@ -20,7 +20,11 @@
     "home": "Home",
     "discord": "Unisciti al nostro Discord",
     "x": "Segui su X",
-    "github": "Contribuisci su GitHub"
+    "github": "Contribuisci su GitHub",
+    "delete_installation_files": "Rimuovi file di installazione",
+    "change_exe_path": "Modifica percorso dell'eseguibile",
+    "open_archive_path": "Apri posizione del file",
+    "game_executable": "Eseguibile del gioco"
   },
   "header": {
     "search": "Cerca",
@@ -96,7 +100,8 @@
     "dont_show_it_again": "Non mostrarlo più",
     "copy_to_clipboard": "Copia",
     "copied_to_clipboard": "Copiato",
-    "got_it": "Capito"
+    "got_it": "Capito",
+    "game_executable": "Eseguibile del gioco"
   },
   "activation": {
     "title": "Attiva Hydra",
@@ -127,7 +132,8 @@
     "remove_from_list": "Rimuovi",
     "delete_modal_title": "Sei sicuro?",
     "delete_modal_description": "Questo rimuoverà tutti i file di installazione dal tuo computer",
-    "install": "Installa"
+    "install": "Installa",
+    "delete_installation_modal_description": "Ciò rimuoverà la cartella in cui è stato scaricato il gioco. Se hai installato il gioco nella stessa posizione in cui lo hai scaricato, verrà eliminato."
   },
   "settings": {
     "downloads_path": "Percorso dei download",

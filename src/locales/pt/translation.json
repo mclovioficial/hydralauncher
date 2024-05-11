@@ -20,7 +20,11 @@
     "follow_us": "Acompanhe-nos",
     "discord": "Entre no nosso Discord",
     "x": "Siga-nos no X",
-    "github": "Contribua no GitHub"
+    "github": "Contribua no GitHub",
+    "delete_installation_files": "Remover arquivos de instalação",
+    "change_exe_path": "Alterar caminho do executável",
+    "open_archive_path": "Abrir local do arquivo",
+    "game_executable": "Executável do jogo"
   },
   "header": {
     "search": "Buscar",
@@ -92,7 +96,8 @@
     "dont_show_it_again": "Não mostrar novamente",
     "copy_to_clipboard": "Copiar",
     "copied_to_clipboard": "Copiado",
-    "got_it": "Entendi"
+    "got_it": "Entendi",
+    "game_executable": "Executável do jogo"
   },
   "activation": {
     "title": "Ativação",
@@ -121,6 +126,7 @@
     "remove_from_list": "Remover",
     "delete": "Remover instalador",
     "delete_modal_description": "Isso removerá todos os arquivos de instalação do seu computador",
+    "delete_installation_modal_description": "Isso removerá a pasta onde seu jogo foi baixado. Caso você tenha instalado o jogo no mesmo local onde o baixou, ele será excluído.",
     "delete_modal_title": "Tem certeza?",
     "deleting": "Excluindo instalador…",
     "install": "Instalar"

@@ -1,17 +1,17 @@
 import { addMilliseconds } from "date-fns";
 
-import { formatDownloadProgress } from "@renderer/helpers";
-import { useLibrary } from "./use-library";
-import { useAppDispatch, useAppSelector } from "./redux";
 import {
   addPacket,
   clearDownload,
-  setGameDeleting,
   removeGameFromDeleting,
+  setGameDeleting,
 } from "@renderer/features";
-import type { GameShop, TorrentProgress } from "@types";
-import { useDate } from "./use-date";
+import { formatDownloadProgress } from "@renderer/helpers";
 import { formatBytes } from "@renderer/utils";
+import type { GameShop, TorrentProgress } from "@types";
+import { useAppDispatch, useAppSelector } from "./redux";
+import { useDate } from "./use-date";
+import { useLibrary } from "./use-library";
 
 export function useDownload() {
   const { updateLibrary } = useLibrary();
@@ -98,11 +98,16 @@ export function useDownload() {
         dispatch(setGameDeleting(gameId));
         return window.electron.deleteGameFolder(gameId);
       })
-      .catch(() => {})
       .finally(() => {
         updateLibrary();
         dispatch(removeGameFromDeleting(gameId));
       });
+
+  const removeInstallationFolder = (gameId: number) => {
+    window.electron.deleteGameFolder(gameId).finally(() => {
+      updateLibrary();
+    });
+  };
 
   const isGameDeleting = (gameId: number) => {
     return gamesWithDeletionInProgress.includes(gameId);
@@ -126,6 +131,7 @@ export function useDownload() {
     cancelDownload,
     removeGameFromLibrary,
     deleteGame,
+    removeInstallationFolder,
     isGameDeleting,
     clearDownload: () => dispatch(clearDownload()),
     addPacket: (packet: TorrentProgress) => dispatch(addPacket(packet)),

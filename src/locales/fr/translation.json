@@ -17,7 +17,11 @@
     "downloading": "{{title}} ({{percentage}} - Téléchargement en cours…)",
     "filter": "Filtrer la bibliothèque",
     "home": "Page d’accueil",
-    "follow_us": "Suivez-nous"
+    "follow_us": "Suivez-nous",
+    "delete_installation_files": "Supprimer les fichiers d'installation",
+    "change_exe_path": "Modifier le chemin de l'exécutable",
+    "open_archive_path": "Ouvrir l'emplacement du fichier",
+    "game_executable": "Exécutable du jeu"
   },
   "header": {
     "search": "Recherche",
@@ -75,7 +79,8 @@
     "close": "Fermer",
     "deleting": "Suppression du programme d'installation…",
     "playing_now": "Jeu en cours",
-    "last_time_played": "Dernièrement joué {{période}}"
+    "last_time_played": "Dernièrement joué {{période}}",
+    "game_executable": "Exécutable du jeu"
   },
   "activation": {
     "title": "Activer Hydra",
@@ -106,7 +111,8 @@
     "delete_modal_description": "Cela supprimera tous les fichiers d'installation de votre ordinateur",
     "delete_modal_title": "Es-tu sûr?",
     "deleting": "Suppression du programme d'installation…",
-    "install": "Installer"
+    "install": "Installer",
+    "delete_installation_modal_description": "Cela supprimera le dossier dans lequel votre jeu a été téléchargé. Si vous avez installé le jeu au même endroit où vous l'avez téléchargé, il sera supprimé."
   },
   "settings": {
     "downloads_path": "Chemin des téléchargements",

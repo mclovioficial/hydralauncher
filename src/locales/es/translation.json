@@ -20,7 +20,11 @@
     "home": "Inicio",
     "discord": "Únete a nuestro Discord",
     "x": "Síguenos en X",
-    "github": "Contribuye en GitHub"
+    "github": "Contribuye en GitHub",
+    "delete_installation_files": "Eliminar archivos de instalación",
+    "change_exe_path": "Cambiar la ruta del ejecutable",
+    "open_archive_path": "Abrir ubicación del archivo",
+    "game_executable": "\nEjecutable del juego"
   },
   "header": {
     "search": "Buscar",
@@ -92,7 +96,8 @@
     "dodi_installation_instruction": "Cuando abras el instalador de DODI, presiona la tecla hacia arriba del teclado <0 /> para iniciar el proceso de instalación:",
     "dont_show_it_again": "No mostrar de nuevo",
     "copy_to_clipboard": "Copiar",
-    "copied_to_clipboard": "Copiado"
+    "copied_to_clipboard": "Copiado",
+    "game_executable": "Ejecutable del juego"
   },
   "activation": {
     "title": "Activar Hydra",
@@ -123,7 +128,8 @@
     "delete_modal_description": "Esto eliminará todos los archivos de instalación de tu computadora.",
     "delete_modal_title": "¿Estás seguro?",
     "deleting": "Eliminando instalador…",
-    "install": "Instalar"
+    "install": "Instalar",
+    "delete_installation_modal_description": "Esto eliminará la carpeta donde se descargó el juego. Si instalaste el juego en la misma ubicación donde lo descargaste, se eliminará."
   },
   "settings": {
     "downloads_path": "Ruta de descarga",
