@@ -36,7 +36,7 @@ declare global {
     ) => () => Electron.IpcRenderer;
 
     /* Catalogue */
-    searchGames: (query: string) => Promise<CatalogueEntry[]>;
+    searchGames: (query: string, page?: number) => Promise<CatalogueEntry[]>;
     getCatalogue: (category: CatalogueCategory) => Promise<CatalogueEntry[]>;
     getGameShopDetails: (
       objectID: string,
