@@ -17,9 +17,9 @@ const openGameInstaller = async (
     where: { id: gameId, isDeleted: false },
   });
 
-  if (!game) return true;
+  if (!game || !game.folderName) return true;
 
-  const gamePath = path.join(
+  let gamePath = path.join(
     game.downloadPath ?? (await getDownloadsPath()),
     game.folderName!
   );
@@ -30,13 +30,12 @@ const openGameInstaller = async (
   }
 
   const setupPath = path.join(gamePath, "setup.exe");
-  if (!fs.existsSync(setupPath)) {
-    shell.openPath(gamePath);
-    return true;
+  if (fs.existsSync(setupPath)) {
+    gamePath = setupPath;
   }
 
   if (process.platform === "win32") {
-    shell.openPath(setupPath);
+    shell.openPath(gamePath);
     return true;
   }
 
@@ -48,7 +47,7 @@ const openGameInstaller = async (
   }
 
   if (spawnSync("which", ["wine"]).status === 0) {
-    exec(`wine "${setupPath}"`);
+    exec(`wine "${gamePath}"`);
     return true;
   }
 
